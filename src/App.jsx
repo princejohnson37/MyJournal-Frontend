@@ -1,15 +1,15 @@
-import './App.css'
-import AuthTextInput from './components/AuthPages/AuthTextInput'
-import SignButton from './components/AuthPages/SignButton'
+import "./App.css";
+import AuthPage from "./layouts/AuthPage/AuthPage";
+import LoginPage from "./pages/AuthPages/LoginPage";
 
 function App() {
-
   return (
     <>
-    <AuthTextInput inputType="password" placeholder="password"/>
-    <SignButton label={"SignIn"} />
+      <AuthPage>
+        <LoginPage/>
+      </AuthPage>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
