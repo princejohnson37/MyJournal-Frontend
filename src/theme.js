@@ -1,7 +1,13 @@
 import { createTheme } from "@mui/material/styles";
+import "@fontsource/poppins"; // Defaults to weight 400
+import "@fontsource/poppins/400.css"; // Specify weight
+import "@fontsource/poppins/400-italic.css"; // Specify weight and style
 
-// custom theme
 const theme = createTheme({
+  typography: {
+    fontFamily: '"Poppins", sans-serif', // Set Poppins as the default font
+  },
+
   palette: {
     primary: {
       main: "#DA614C",
