@@ -31,7 +31,7 @@ function LoginPage() {
     },
   });
   return (
-    <>
+    <Grid container>
       <Grid
         className="signup-form-conatiner-main"
         item
@@ -40,7 +40,7 @@ function LoginPage() {
           backgroundColor: "background.default",
         }}
       >
-        <Container sx={{ width: "70%" }}>
+        <Container sx={{ width: "50%" }}>
           <Box>
             <p className="Welcome-text">Welcome</p>
           </Box>
@@ -95,7 +95,7 @@ function LoginPage() {
       >
         {/* <ImageContainer /> */}
       </Grid>
-    </>
+    </Grid>
   );
 }
 
