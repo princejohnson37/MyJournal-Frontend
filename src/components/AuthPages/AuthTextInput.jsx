@@ -1,13 +1,13 @@
+/* eslint-disable react/prop-types */
 import { TextField } from "@mui/material";
 
-import React from 'react'
-
-function AuthTextInput({inputType,placeholder}) {
+function AuthTextInput({ field, form, ...props }) {
   return (
-    <TextField type={inputType} placeholder={placeholder}>
-
-    </TextField>
-  )
+    <TextField
+      {...props}
+      {...field}
+    />
+  );
 }
 
-export default AuthTextInput
+export default AuthTextInput;
