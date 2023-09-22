@@ -23,15 +23,18 @@
   .login-form-footer-conatiner {
     display: flex;
     justify-content: center;
-    p {
-      span {
-        font-weight: bold;
-        cursor: pointer;
-      }
-    }
     .login-form-footer {
       display: flex;
       gap: 5px;
     }
+  }
+
+  .login-form-footer-conatiner p span {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .login-form-footer-conatiner p span:hover {
+    color: #da614c;
   }
 }

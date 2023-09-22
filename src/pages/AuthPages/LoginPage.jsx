@@ -47,8 +47,8 @@ function LoginPage() {
           <Box className="signup-form-conatiner">
             <AuthTextInput
               icon={emailIcon}
-              placeholder={"email"}
-              inputType={"email"}
+              placeholder={"Email"}
+              type={"email"}
               name="email"
               value={formik.values.email}
               onChange={formik.handleChange}
@@ -56,8 +56,8 @@ function LoginPage() {
             />
             <AuthTextInput
               icon={passwordIcon}
-              placeholder="password"
-              inputType="password"
+              placeholder="Password"
+              type="password"
               name="password"
               value={formik.values.password}
               onChange={formik.handleChange}
@@ -72,6 +72,7 @@ function LoginPage() {
               <span>Forgot Password? </span>
             </Box>
             <SignButton
+              variant="contained"
               label={"SignIn"}
               type={"submit"}
               onClick={formik.handleSubmit}
