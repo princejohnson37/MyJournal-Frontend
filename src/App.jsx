@@ -1,9 +1,12 @@
+import AuthPageLayout from "./layouts/AuthPages/AuthPageLayout";
 import LoginPage from "./pages/AuthPages/LoginPage";
 
 function App() {
   return (
     <>
-      <LoginPage />
+    <AuthPageLayout>
+      <LoginPage/>
+    </AuthPageLayout>
     </>
   );
 }
