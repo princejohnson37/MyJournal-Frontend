@@ -1,5 +1,6 @@
 import { Container, Grid } from "@mui/material";
 import cover from "../../assets/Images/coverImage.jpg";
+import PropTypes from 'prop-types';
 
 function AuthPageLayout(props) {
   return (
@@ -28,5 +29,9 @@ function AuthPageLayout(props) {
     </Grid>
   );
 }
+
+AuthPageLayout.propTypes = {
+  children: PropTypes.element.isRequired
+};
 
 export default AuthPageLayout;
