@@ -21,11 +21,11 @@ function AuthPageLayout(props) {
       <Grid
         item
         md={6}
-        // sx={{
-        //   backgroundImage: `url(${cover})`,
-        //   height: "100vh",
-        //   backgroundSize: "cover",
-        // }}
+        sx={{
+          backgroundImage: `url(${cover})`,
+          height: "100vh",
+          backgroundSize: "cover",
+        }}
       >
         {/* <ImageContainer /> */}
       </Grid>
