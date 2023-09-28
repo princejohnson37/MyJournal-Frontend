@@ -1,6 +1,7 @@
 import { Container, Grid } from "@mui/material";
 import cover from "../../assets/Images/coverImage.jpg";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+import { Outlet } from "react-router";
 
 function AuthPageLayout(props) {
   return (
@@ -13,16 +14,18 @@ function AuthPageLayout(props) {
           backgroundColor: "background.default",
         }}
       >
-        <Container sx={{ width: "50%" }}>{props.children}</Container>
+        <Container sx={{ width: "50%" }}>
+          <Outlet />
+        </Container>
       </Grid>
       <Grid
         item
         md={6}
-        sx={{
-          backgroundImage: `url(${cover})`,
-          height: "100vh",
-          backgroundSize: "cover",
-        }}
+        // sx={{
+        //   backgroundImage: `url(${cover})`,
+        //   height: "100vh",
+        //   backgroundSize: "cover",
+        // }}
       >
         {/* <ImageContainer /> */}
       </Grid>
@@ -31,7 +34,7 @@ function AuthPageLayout(props) {
 }
 
 AuthPageLayout.propTypes = {
-  children: PropTypes.element.isRequired
+  children: PropTypes.element.isRequired,
 };
 
 export default AuthPageLayout;
