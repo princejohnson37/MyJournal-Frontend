@@ -1,4 +1,11 @@
-import { Container, FormControlLabel, Grid, Radio } from "@mui/material";
+import {
+  Checkbox,
+  Container,
+  FormControlLabel,
+  Grid,
+  Link,
+  Radio,
+} from "@mui/material";
 import AuthTextInput from "../../components/AuthPages/AuthTextInput";
 import SignButton from "../../components/AuthPages/SignButton";
 import { useFormik } from "formik";
@@ -33,14 +40,16 @@ function LoginPage() {
   return (
     <Grid container>
       <Grid
-        className="signup-form-conatiner-main"
+        className="signup-form-wrapper"
         item
         md={6}
+        sm={12}
         sx={{
           backgroundColor: "background.default",
+          width: "100%",
         }}
       >
-        <Container sx={{ width: "50%" }}>
+        <Container maxWidth="sm" className="signup-form-conatiner-main">
           <Box>
             <p className="Welcome-text">Welcome</p>
           </Box>
@@ -66,14 +75,24 @@ function LoginPage() {
             <Box className="password-container">
               <FormControlLabel
                 value="end"
-                control={<Radio />}
+                control={<Checkbox />}
                 label="Remember me"
               />
-              <span>Forgot Password? </span>
+              <Link
+                underline="none"
+                component="button"
+                variant="body2"
+                onClick={() => {
+                  console.info("I'm a button.");
+                }}
+              >
+                Forgot Password
+              </Link>
+              {/* <span>Forgot Password? </span> */}
             </Box>
             <SignButton
               variant="contained"
-              label={"SignIn"}
+              label={"Sign In"}
               type={"submit"}
               onClick={formik.handleSubmit}
             />
@@ -88,6 +107,7 @@ function LoginPage() {
       <Grid
         item
         md={6}
+        sm={false}
         sx={{
           backgroundImage: `url(${cover})`,
           height: "100vh",

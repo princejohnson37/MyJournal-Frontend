@@ -1,6 +1,17 @@
-.signup-form-conatiner-main {
+.signup-form-wrapper {
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 900px) {
+    background-image: url("../../assets/Images/coverImage.jpg");
+    background-size: cover;
+  }
+  .signup-form-conatiner-main {
+    @media only screen and (max-width: 900px) {
+      background-color: rgba(243, 233, 220, 0.7);
+      width: 90%;
+      border-radius: 0.5rem;
+    }
+  }
   .Welcome-text {
     color: #101828;
     text-align: center;
