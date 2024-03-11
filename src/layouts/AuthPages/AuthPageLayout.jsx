@@ -2,12 +2,13 @@ import { Container, Grid } from "@mui/material";
 import cover from "../../assets/Images/coverImage.jpg";
 import PropTypes from "prop-types";
 import { Outlet } from "react-router";
+import classes from './AuthPageLayout.module.scss';
 
 function AuthPageLayout(props) {
   return (
     <Grid container>
       <Grid
-        className="signup-form-conatiner-main"
+        className={classes["signup-form-conatiner-main"]}
         item
         md={6}
         sx={{

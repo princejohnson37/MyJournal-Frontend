@@ -2,12 +2,12 @@
 import { InputAdornment, TextField } from "@mui/material";
 import { IconButton } from "@mui/material";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import "./AuthTextInput.scss";
+import classes from './AuthTextInput.module.scss';
 
 function AuthTextInput({ field, form, ...props }) {
   return (
     <TextField
-      className="text-box-style"
+      className={classes["text-box-style"]}
       {...props}
       {...field}
       InputProps={{

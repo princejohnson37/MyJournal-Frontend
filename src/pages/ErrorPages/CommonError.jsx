@@ -1,3 +1,4 @@
+import { Outlet } from "react-router";
 
 export default function ErrorPage() {
 
@@ -6,6 +7,7 @@ export default function ErrorPage() {
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
       <p>
+      <Outlet/>
       </p>
     </div>
   );

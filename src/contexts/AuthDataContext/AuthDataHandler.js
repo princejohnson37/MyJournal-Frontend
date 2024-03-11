@@ -6,7 +6,7 @@ export const useAuthDataContext =()=> useContext(AuthDataContext);
 const AuthDataHandler = (props) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userDetails, setUserDetails] = useState({});
-    const authUser = 
+    // const authUser = 
     const authDataContextPayload = useMemo(()=>{
         isLoggedIn,
         userDetails,
