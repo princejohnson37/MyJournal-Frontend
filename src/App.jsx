@@ -1,9 +1,9 @@
-import LoginPage from "./pages/AuthPages/LoginPage";
+import RouterContainer from "./routes/RouterContainer";
 
 function App() {
   return (
     <>
-      <LoginPage />
+      <RouterContainer />
     </>
   );
 }
